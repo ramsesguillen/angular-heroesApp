@@ -1,0 +1,18 @@
+<p>listado works!</p>
+<mat-divider></mat-divider>
+<br>
+
+
+<div fxLayout="row wrap"
+  fxLayoutAlign="center"
+  fxLayoutGap="20px"
+  fxLayout.xs="column"
+>
+  <div fxFlex="20" *ngFor="let heroe of heroes"
+    fxFlex.lg="15"
+    fxFlex.sm="30"
+  >
+    <app-heroe-targeta [heroe]="heroe"></app-heroe-targeta>
+  </div>
+</div>
+
