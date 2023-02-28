@@ -1,1 +1,36 @@
 <router-outlet></router-outlet>
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Personal data
+      </mat-panel-title>
+      <mat-panel-description>
+        Type your name and age
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-grid-list cols="2" rowHeight="100px">
+      <mat-grid-tile
+        colspan="2"
+        rowspan="1"
+      >
+        <mat-form-field>
+          <input matInput placeholder="First name">
+        </mat-form-field>
+      </mat-grid-tile>
+
+      <mat-grid-tile
+        colspan="2"
+        rowspan="1"
+      >
+        <mat-form-field>
+          <input matInput placeholder="Age">
+        </mat-form-field>
+      </mat-grid-tile>
+
+
+    </mat-grid-list>
+
+  </mat-expansion-panel>
+</mat-accordion>
